@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<section class="container">
+  <h3 class="gallery-name">{{gallery.name}}</h3>
+  <!-- If the user is logged in, render the gallery content -->
+  {{#if loggedIn}}
+  <section class="flex-row justify-center">
+    {{#each blogs as |blog|}}
+    {{/each}}
+  </section>
+</section>
+<!-- Otherwise, provide a link to login -->
+{{else}}
+<a href="/login">You must login first to view this page</a>
+{{/if}}
