@@ -1,19 +1,33 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
+<headers class="bg-danger text-center">
+  <h1>Tech Blog</h1>
+</headers>
 
-<section class="container">
-  <h3 class="gallery-name">{{gallery.name}}</h3>
-  <!-- If the user is logged in, render the gallery content -->
-  {{#if loggedIn}}
-  <section class="flex-row justify-center">
-    {{#each blogs as |blog|}}
-    {{/each}}
-  </section>
-</section>
-<!-- Otherwise, provide a link to login -->
-{{else}}
-<a href="/login">You must login first to view this page</a>
-{{/if}}
+<!-- Loop over each object in the projects array -->
+{{#each projects as |project|}}
+  <div class="row mb-4 project">
+    <div class="col-md-5">
+      <h2>
+        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+        {{{get_emoji}}}
+        <a href="/project/{{project.id}}">{{project.name}}</a>
+      </h2>
+      <p>
+        <span for="img" aria-label="money">💲</span>
+        <!-- Pass needed_funding value to the helper function -->
+        <span class="dollar-amount">{{format_amount
+            project.needed_funding
+          }}</span>
+        needed!
+      </p>
+      <p>Created by
+        {{project.user.name}}
+        on
+        {{format_date project.date_created}}</p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        {{project.description}}
+      </p>
+    </div>
+  </div>
+{{/each}}
