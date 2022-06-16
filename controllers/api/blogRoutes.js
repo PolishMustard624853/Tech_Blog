@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Project } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.post('/', async (req, res) => {
   try {
@@ -14,7 +15,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', withAuth, async (req, res) => {
   try {
     const projectData = await Project.destroy({
       where: {
