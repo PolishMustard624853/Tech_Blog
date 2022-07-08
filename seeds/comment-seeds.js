@@ -9,7 +9,7 @@ const commentData = [
     {
         user_id: 4,
         post_id: 4,
-        comment_text: "This is really cool!"
+        comment_text: "Fur Sure"
     },
     {
         user_id: 1,
@@ -39,7 +39,7 @@ const commentData = [
     {
         user_id: 2,
         post_id: 1,
-        comment_text: "Nice coin!"
+        comment_text: "Get Paddy's Coin"
     }
 ]
 

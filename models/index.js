@@ -10,11 +10,11 @@ Post.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
-Comment.belongsTo(User, {
+Blog.belongsTo(User, {
     foreignKey: 'user_id'
   });
   
-Comment.belongsTo(Post, {
+Blog.belongsTo(Post, {
     foreignKey: 'post_id'
 });
   

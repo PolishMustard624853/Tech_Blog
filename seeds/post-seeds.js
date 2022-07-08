@@ -15,7 +15,6 @@ const postData = [
         title: "Charlie is broke",
         post_content: " Oh, look at me! The millionaire who goes to see doctors!",
         user_id: 2
-
     },
     {
         title: "Dee Gets a New Job",
@@ -23,7 +22,7 @@ const postData = [
         user_id: 5
     },
     {
-        title: "A Lawyer, Charlie is",
+        title: "A Lawyer, Charlie be",
         post_content: "Then, I’ll just regress, because I feel I made myself perfectly redundant.",
         user_id: 4
     }

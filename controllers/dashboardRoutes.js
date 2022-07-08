@@ -20,12 +20,12 @@ const withAuth = require('../utils/auth');
             attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
             include: {
             model: User,
-            attributes: ['username', 'twitter', 'github']
+            attributes: ['username', 'github']
             }
         },
         {
             model: User,
-            attributes: ['username', 'twitter', 'github']
+            attributes: ['username', 'github']
         }
         ]
     })
@@ -56,12 +56,12 @@ const withAuth = require('../utils/auth');
             attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
             include: {
             model: User,
-            attributes: ['username', 'twitter', 'github']
+            attributes: ['username', 'github']
             }
         },
         {
             model: User,
-            attributes: ['username', 'twitter', 'github']
+            attributes: ['username', 'github']
         }
         ]
     })
@@ -100,12 +100,12 @@ Post.findAll({
         attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
         include: {
         model: User,
-        attributes: ['username', 'twitter', 'github']
+        attributes: ['username', 'github']
         }
     },
     {
         model: User,
-        attributes: ['username', 'twitter', 'github']
+        attributes: ['username', 'github']
     }
     ]
 })
