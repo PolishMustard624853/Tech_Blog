@@ -8,6 +8,10 @@ This assignment is to build a CMS-style blog site similar to a Wordpress site, w
 
 ## Installation
 
+Users must install express-handlebars, MYSQL2, and express.
+
+### In the terminal you must run the following commands: 
+
 ```
 npm i
 ```
@@ -16,6 +20,9 @@ npm i nodemon
 ```
 ```
 npm i express
+```
+```
+npm install express-handlebars
 ```
 ```
 npm install --save-dev sequelize-cli
@@ -30,14 +37,24 @@ npm run seed
 npm start
 ```
 
+Head to your web browser and go to 
+```
+localhost:3001
+```
+
 
 ## Links
 ### Github
 
+https://github.com/PolishMustard624853/Tech_Blog
 
+https://polishmustard624853.github.io/Tech_Blog
 
+### Heroku
+
+https://mvc-tech-blog-cjs.herokuapp.com/
 
 ### Video Walkthrough
 
-https://app.vidcast.io/share/40a5a7e8-bb34-421c-8cc7-175a4e748293
+https://app.vidcast.io/share/ed00f551-ac2f-4f2e-af6c-298054157523
 
